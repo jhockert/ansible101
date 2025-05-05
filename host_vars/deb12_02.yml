@@ -1,0 +1,4 @@
+nginx_user: root
+nginx_group: root
+nginx_site_name: Brickstone
+nginx_web_root: /var/www/html/brickstone

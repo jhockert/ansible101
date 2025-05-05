@@ -1,0 +1,19 @@
+all:
+  hosts:
+    deb12_02:
+      ansible_host: 192.168.122.135
+      ansible_user: root
+      ansible_password: secret
+    win2025_01:
+      ansible_host: 192.168.122.45
+      ansible_user: administrator
+      ansible_password: secret
+      ansible_connection: ssh
+      ansible_shell_type: powershell
+  children:
+    windows:
+      hosts:
+        win2025_01:
+    linux:
+      hosts:
+        deb12_02:

@@ -1,0 +1,7 @@
+- name: Windows firewall rule example
+  hosts: windows
+  tasks:
+    - name: Enable WinRM rule
+      community.windows.win_firewall_rule:
+        name: "Allow WinRM"
+        enable: true
