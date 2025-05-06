@@ -1,10 +1,8 @@
-- name: Install basic tools and nginx
-  hosts: all
+- name: Install basic tools
+  hosts: linux
   become: true
   tasks:
     - name: Install htop
       ansible.builtin.package:
         name: htop
         state: present
-  roles:
-    - nginx

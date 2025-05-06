@@ -1,13 +1,13 @@
 all:
   hosts:
     deb12_02:
-      ansible_host: 192.168.122.135
+      ansible_host: 192.168.137.130
       ansible_user: root
-      ansible_password: secret
+      ansible_python_interpreter: /usr/bin/python3
     win2025_01:
-      ansible_host: 192.168.122.45
-      ansible_user: administrator
-      ansible_password: secret
+      ansible_host: 192.168.137.129
+      ansible_user: jonas
+      ansible_password: Secret1!
       ansible_connection: ssh
       ansible_shell_type: powershell
   children:

@@ -1,4 +1,6 @@
 nginx_user: root
 nginx_group: root
-nginx_site_name: Brickstone
+nginx_hostname: deb12-02
+nginx_site_name: brickstone
+nginx_site_title: "{{ nginx_site_name }}"
 nginx_web_root: /var/www/html/brickstone

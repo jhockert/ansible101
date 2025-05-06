@@ -1,3 +1,3 @@
 {
-    "ansible.python.interpreterPath": "/home/jonas/ansible101/venv/bin/python"
+    "ansible.python.interpreterPath": "/home/jonas/venv/bin/python"
 }
